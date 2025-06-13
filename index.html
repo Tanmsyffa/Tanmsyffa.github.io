@@ -326,8 +326,7 @@
             const isLightMode = document.body.classList.contains("light-mode");
             localStorage.setItem("lightMode", isLightMode);
         }
-        
-        // Check for saved user preference
+    
         document.addEventListener('DOMContentLoaded', () => {
             const savedMode = localStorage.getItem("lightMode");
             if (savedMode === "true") {
